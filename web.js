@@ -2,7 +2,7 @@ var express = require('express');
 var fs = require('fs');
 
 var app = express.createServer(express.logger());
-txt = buf.toString(fs.readFile('./index.html'))
+txt = (fs.readFile('./index.html').toString()
 
 app.get('/', function(request, response) {
   response.send(txt);
